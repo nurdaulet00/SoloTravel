@@ -1,0 +1,322 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Nunito&display=swap');
+* {
+  font-family: 'Nunito';
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: #ff4d67;
+  color: #fff;
+  overflow-y: auto;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+}
+
+.sidebar .sidebar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+  padding: 0rem 1rem;
+}
+
+.sidebar .sidebar-header img {
+  width: 3rem;
+  height: auto;
+}
+
+.sidebar .sidebar-menu {
+  padding: 1rem;
+}
+
+.sidebar .sidebar-menu li.active a {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.sidebar a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.sidebar a span:last-child {
+  padding-left: 0.6rem;
+}
+
+.sidebar li {
+  margin-bottom: 1.5rem;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+  width: 60px;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar li span:last-child {
+  display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#sidebar-toggle:checked ~ .main-content {
+  margin-left: 60px;
+}
+
+#sidebar-toggle:checked ~ .main-content header {
+  left: 60px;
+  width: calc(100% - 60px);
+}
+
+.main-content {
+  position: relative;
+  margin-left: 240px;
+  -webkit-transition: margin-left 500ms;
+  transition: margin-left 500ms;
+}
+
+.main-content header {
+  position: fixed;
+  left: 240px;
+  top: 0;
+  z-index: 100;
+  width: calc(100% - 240px);
+  background: #fff;
+  height: 60px;
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  -webkit-transition: left 500ms;
+  transition: left 500ms;
+}
+
+.main-content header .search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 70%;
+}
+
+.main-content header .search-wrapper input {
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  height: 38px;
+}
+
+.main-content main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-content main .table-responsive {
+  overflow-x: auto;
+}
+
+.main-content main .table-responsive .thead {
+  height: 2em;
+  padding: 2%;
+  background-color: #ff4d67;
+}
+
+.main-content main .table-responsive .thead th {
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.main-content main table.list {
+  text-align: center;
+  width: 80%;
+  margin: 50px auto;
+  margin-top: 100px;
+  background: #774749;
+}
+
+td {
+  border-collapse: collapse;
+  text-align: left;
+  padding: 8px 15px;
+  background-color: #ff92a2;
+}
+
+tr:nth-child(even) td {
+  background-color: #d67e8b;
+}
+
+input[type='submit']:hover {
+  background: #434b96;
+}
+
+input[type='reset']:hover {
+  background: #434b96;
+}
+
+button {
+  background: #eee;
+  padding: 6px 12px;
+  margin: 5px 0 2px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  width: 90%;
+}
+
+button:hover {
+  background: #ebbe44;
+}
+
+#allUsers {
+  width: 20%;
+  height: 200px;
+  background-color: #db1d7c;
+  left: 30%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#num {
+  background-color: blue;
+  background-attachment: fixed;
+  padding: 10px;
+  font-size: 4em;
+  border-radius: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+#editForm {
+  display: none;
+  z-index: 8;
+  position: fixed;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+
+#editForm form {
+  width: 50vw;
+  height: fit-content;
+  background-color: rgba(238, 188, 180, 0.973);
+}
+#editForm form input {
+  width: 80%;
+}
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    width: 60px;
+    z-index: 150;
+  }
+  .sidebar .sidebar-header h3 span,
+  .sidebar li span:last-child {
+    display: none;
+  }
+  .sidebar .sidebar-header,
+  .sidebar li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .main-content {
+    margin-left: 60px;
+  }
+  .main-content header {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  #sidebar-toggle:checked ~ .sidebar {
+    width: 240px;
+  }
+  #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+  #sidebar-toggle:checked ~ .sidebar li span:last-child {
+    display: inline;
+  }
+  #sidebar-toggle:checked ~ .sidebar .sidebar-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #sidebar-toggle:checked ~ .sidebar li {
+    display: block;
+  }
+  #sidebar-toggle:checked ~ .main-content {
+    margin-left: 60px;
+  }
+  #sidebar-toggle:checked ~ .main-content header {
+    left: 60px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

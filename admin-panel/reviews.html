@@ -1,0 +1,128 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/aea9308c95.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css-admin/style.css" />
+  </head>
+
+  <body>
+    <input type="checkbox" id="sidebar-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3 class="brand">
+          <img src="logo.png" alt="" />
+          <span>TralelSolo</span>
+        </h3>
+        <label for="sidebar-toggle" class="ti-menu-alt"></label>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="admin.html">
+              <i class="fas fa-users"></i>
+              <span>Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="bookings.html">
+              <i class="fas fa-plane"></i>
+              <span>Booking</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="reviews.html">
+              <i class="fas fa-comments"></i>
+              <span>Reviews</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <div class="search-wrapper">
+          <span class="ti-search"></span>
+          <input type="search" placeholder="Search" />
+        </div>
+      </header>
+
+      <main>
+        <table class="list table-responsive" id="revList">
+          <thead>
+            <tr class="thead">
+              <th>Time</th>
+              <th>Name</th>
+              <th>Review</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </main>
+    </div>
+    <!-- <script type="text/javascript" src="./js/script.js"></script> -->
+    <!-- <script src="./js/admin.js"></script> -->
+    <!-- <script src="./js/index.js"></script> -->
+    <script>
+      function currentTime(time) {
+        var a = new Date(time * 1000);
+        var months = [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ];
+        var year = a.getFullYear();
+        var month = months[a.getMonth()];
+        var date = a.getDate();
+        var hour = a.getHours();
+        var min = a.getMinutes();
+        var sec = a.getSeconds();
+        var time =
+          date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
+        return time;
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const comments = JSON.parse(localStorage.getItem('comments'));
+
+        var table = document
+          .getElementById('revList')
+          .getElementsByTagName('tbody')[0];
+        for (let i = 0; i < comments.length; i++) {
+          var newRow = table.insertRow(table.length);
+          var cell1 = newRow.insertCell(0);
+          var cell2 = newRow.insertCell(1);
+          var cell3 = newRow.insertCell(2);
+
+          cell1.innerHTML = currentTime(comments[i].time);
+          cell2.innerHTML = comments[i].name;
+          cell3.innerHTML = comments[i].body;
+        }
+      });
+    </script>
+  </body>
+</html>

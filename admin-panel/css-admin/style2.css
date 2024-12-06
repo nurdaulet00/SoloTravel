@@ -1,0 +1,124 @@
+/** @format */
+
+body {
+  /* background-image: url('../img/background.jpg'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.thead {
+  height: 2em;
+  padding: 2%;
+  background-color: #ff715b;
+}
+th {
+  padding: 10px;
+  border-collapse: collapse;
+}
+table.list {
+  text-align: center;
+  width: 80%;
+  margin: 50px auto;
+  margin-top: 100px;
+  background: #c9a4a4;
+}
+
+td {
+  border-collapse: collapse;
+  text-align: left;
+  padding: 8px 15px;
+
+  background-color: rgb(241, 215, 215);
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(224, 219, 219);
+}
+
+input[type='text'],
+input[type='number'] {
+  width: 91%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(165, 161, 161);
+  border-radius: 4px;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  background: #eee;
+  padding: 6px 12px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type='submit']:hover {
+  background: #4b99d8;
+}
+
+input[type='reset']:hover {
+  background: #4b99d8;
+}
+
+button {
+  background: #eee;
+  padding: 6px 12px;
+  margin: 5px 0 2px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  width: 90%;
+}
+
+button:hover {
+  background: #4b99d8;
+}
+
+#allUsers {
+  width: 20%;
+  height: 200px;
+  background-color: rgb(219, 29, 203);
+  left: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#num {
+  background-color: blue;
+  background-attachment: fixed;
+  padding: 10px;
+  font-size: 4em;
+  border-radius: 50px;
+  width: 50%;
+  text-align: center;
+}
+#editForm {
+  display: none;
+  z-index: 8;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+#editForm form {
+  width: 60%;
+  background-color: cornflowerblue;
+}
+#editForm form input {
+  width: 80%;
+}

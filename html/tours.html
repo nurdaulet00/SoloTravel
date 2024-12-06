@@ -1,0 +1,551 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Turagentstvo</title>
+    <style>
+      #progress-bar {
+        position: relative;
+        left: 0;
+        height: 3px;
+        background: red;
+        width: 1%;
+        z-index: 100;
+        height: 3px;
+        border-radius: 20px;
+        background-color: #ff2444;
+      }
+      #progress-bar::after {
+        content: '';
+        z-index: 500;
+        background-color: #4e040f;
+        width: 6px;
+        height: 6px;
+        border-radius: 50px;
+        position: absolute;
+        top: -2px;
+        right: -1px;
+      }
+    </style>
+  </head>
+
+  <body class="body-tours">
+    <header>
+      <nav>
+        <div id="head-logo">
+          <img id="logo" src="../images-video/logo.PNG" alt="the Logo" />
+          <div class="line-logo"></div>
+          <div class="name">TravelSolo</div>
+        </div>
+        <div class="nav-bar">
+          <a class="links" href="index.html">Main page</a>
+          <div class="indicate-l"></div>
+          <!-- Here about us and popular -->
+          <a class="links" href="#">All tours</a>
+          <div class="indicate-active"><div id="progress-bar"></div></div>
+          <!-- filter -->
+          <a class="links" href="countries.html">Countries</a>
+          <div class="indicate-l"></div>
+          <!-- about each country -->
+          <a class="links" href=""></a>
+        </div>
+        <div class="my-acc">
+          <img
+            id="acc-icon"
+            class="profilePhoto"
+            src="../images-video/user.png"
+            alt="acc icon"
+          />
+          <div class="name">
+            <a class="links myAcc" href="useracc.html">My Account</a>
+          </div>
+          <div class="line-logo"></div>
+        </div>
+        <div class="search">
+          <img
+            id="search-icon"
+            alt="search icon"
+            src="../images-video/search.png"
+          />
+        </div>
+      </nav>
+      <div class="backphone">
+        <img src="../images-video/tours.jpg" alt="" />
+        <div class="black">TOUR PACKAGES</div>
+      </div>
+    </header>
+    <main>
+      <div class="tours">
+        <a href="maldives.html">
+          <div class="cards" id="Maldives">
+            <img src="../images-video/maldives.jpg" alt="photo of Maldives" />
+            <div class="circle">
+              50% <br />
+              OFF
+            </div>
+            <div class="stars">
+              <img src="../images-video/star.png" alt="stars" />
+              <img src="../images-video/star.png" alt="stars" />
+              <img src="../images-video/star.png" alt="stars" />
+              <img src="../images-video/star.png" alt="stars" />
+              <img src="../images-video/star.png" alt="stars" />
+            </div>
+            <div class="inf">
+              7 days
+              <div class="line"></div>
+            </div>
+            <div class="inf">
+              15 hrs
+              <div class="line"></div>
+            </div>
+            <div class="inf">15 min</div>
+            <h4>Maldives</h4>
+            <p>
+              Maldives is a tropical state in the Indian Ocean, located on 26
+              ring-shaped atolls
+            </p>
+            <p>
+              Start from<br />
+              <span>401 669 tng.</span>
+            </p>
+            <div class="view-all book">BOOK NOW</div>
+          </div>
+        </a>
+        <div class="cards" id="Dubai">
+          <img src="../images-video/dubai.jpg" alt="photo of Dubai" />
+          <div class="circle">
+            FREE<br />
+            GIFT
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Dubai</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from <br />
+            <span>145 670 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <div class="cards" id="Monetegro">
+          <img src="../images-video/montenegro.jpg" alt="photo of Monetegro" />
+          <div class="circle">
+            25% <br />
+            OFF
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Montenegro</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from<br />
+            <span>250 045 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <div class="cards" id="Antalya">
+          <img src="../images-video/antalya.jpg" alt="photo of Maldives" />
+          <div class="circle">
+            50% <br />
+            OFF
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Antalya</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from<br />
+            <span>401 669 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <div class="cards" id="Stambul">
+          <img src="../images-video/stambul.jpg" alt="photo of Dubai" />
+          <div class="circle">
+            FREE<br />
+            GIFT
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Stambul</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from <br />
+            <span>145 670 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <div class="cards" id="Egypt">
+          <img src="../images-video/egypt.jpg" alt="photo of Monetegro" />
+          <div class="circle">
+            25% <br />
+            OFF
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Egypt</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from<br />
+            <span>250 045 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <div class="cards" id="Thailand">
+          <img src="../images-video/thai.jpg" alt="photo of Maldives" />
+          <div class="circle">
+            50% <br />
+            OFF
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Thailand</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from<br />
+            <span>401 669 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <div class="cards" id="Bali">
+          <img src="../images-video/bali.jpg" alt="photo of Dubai" />
+          <div class="circle">
+            FREE<br />
+            GIFT
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Bali</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from <br />
+            <span>145 670 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <a href="georgia.html">
+          <div class="cards" id="Georgia">
+            <img src="../images-video/georgia.jpg" alt="photo of Monetegro" />
+            <div class="circle">
+              25% <br />
+              OFF
+            </div>
+            <div class="stars">
+              <img src="../images-video/star.png" alt="stars" />
+              <img src="../images-video/star.png" alt="stars" />
+              <img src="../images-video/star.png" alt="stars" />
+              <img src="../images-video/star.png" alt="stars" />
+              <img src="../images-video/star.png" alt="stars" />
+            </div>
+            <div class="inf">
+              7 days
+              <div class="line"></div>
+            </div>
+            <div class="inf">
+              15 hrs
+              <div class="line"></div>
+            </div>
+            <div class="inf">15 min</div>
+            <h4>Georgia</h4>
+            <p>
+              Maldives is a tropical state in the Indian Ocean, located on 26
+              ring-shaped atolls
+            </p>
+            <p>
+              Start from<br />
+              <span>250 045 tng.</span>
+            </p>
+            <div class="view-all book">BOOK NOW</div>
+          </div>
+        </a>
+        <div class="cards" id="Hong Kong">
+          <img src="../images-video/hongkong.jpg" alt="photo of Maldives" />
+          <div class="circle">
+            50% <br />
+            OFF
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Hong Kong</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from<br />
+            <span>401 669 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <div class="cards" id="Singapure">
+          <img src="../images-video/sing.jpg" alt="photo of Dubai" />
+          <div class="circle">
+            FREE<br />
+            GIFT
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Singapure</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from <br />
+            <span>145 670 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+        <div class="cards" id="Paris">
+          <img src="../images-video/paris.jpg" alt="photo of Monetegro" />
+          <div class="circle">
+            25% <br />
+            OFF
+          </div>
+          <div class="stars">
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+            <img src="../images-video/star.png" alt="stars" />
+          </div>
+          <div class="inf">
+            7 days
+            <div class="line"></div>
+          </div>
+          <div class="inf">
+            15 hrs
+            <div class="line"></div>
+          </div>
+          <div class="inf">15 min</div>
+          <h4>Paris</h4>
+          <p>
+            Maldives is a tropical state in the Indian Ocean, located on 26
+            ring-shaped atolls
+          </p>
+          <p>
+            Start from<br />
+            <span>250 045 tng.</span>
+          </p>
+          <div class="view-all book">BOOK NOW</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="block-f">
+          <img src="../images-video/logo1.png" alt="logo" />
+          <h2>TravelSolo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute
+          </p>
+        </div>
+        <div class="block-f" id="f2">
+          <div class="name-f">CONTACT US</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+            eiusmod.
+          </p>
+          <div class="p1">
+            <img src="../images-video/icon_home.png" alt="" />
+            <p class="p">Manas 34/1, Almaty, Kazakhstan</p>
+          </div>
+          <div class="p2">
+            <img src="../images-video/icon_phone.png" alt="" />
+            <p class="p">+7(747) 772-64-79</p>
+          </div>
+          <div class="p1">
+            <img src="../images-video/icon_email.png" alt="" />
+            <p class="p">murzabaevnursultan2005@gmail.com</p>
+          </div>
+        </div>
+        <div class="block-f">
+          <div class="name-f" id="g">GALLERY</div>
+          <a href="https://www.pexels.com/ru-ru/">
+            <div class="gallery">
+              <img src="../images-video/gly1.jpg" alt="" />
+              <img src="../images-video/gly2.jpg" alt="" />
+              <img src="../images-video/gly3.jpg" alt="" />
+              <img src="../images-video/antalya.jpg" alt="" />
+              <img src="../images-video/bali.jpg" alt="" />
+              <img src="../images-video/dubai.jpg" alt="" />
+              <img src="../images-video/egypt.jpg" alt="" />
+              <img src="../images-video/georgia.jpg" alt="" />
+              <img src="../images-video/slide (1).jpg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="block-f">
+          <div class="name-f">NEWSLETTER</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+          </p>
+          <form action="index.html" method="post">
+            <input type="email" required placeholder="Enter your email" />
+            <button type="submit">
+              <img src="../images-video/next.png" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="comp">Copyright © 2019 All Rights Reserved by Abdus</div>
+    </footer>
+    <script src="../js/animation.js"></script>
+    <script src="../js/myAcc.js"></script>
+  </body>
+</html>

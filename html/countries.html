@@ -1,0 +1,290 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Turagentstvo</title>
+    <style>
+      #progress-bar {
+        position: relative;
+        left: 0;
+        height: 3px;
+        background: red;
+        width: 1%;
+        z-index: 100;
+        height: 3px;
+        border-radius: 20px;
+        background-color: #ff2444;
+      }
+      #progress-bar::after {
+        content: '';
+        z-index: 500;
+        background-color: #4e040f;
+        width: 6px;
+        height: 6px;
+        border-radius: 50px;
+        position: absolute;
+        top: -2px;
+        right: -1px;
+      }
+    </style>
+  </head>
+
+  <body class="body-tours">
+    <header>
+      <nav>
+        <div id="head-logo">
+          <img id="logo" src="../images-video/logo.PNG" alt="the Logo" />
+          <div class="line-logo"></div>
+          <div class="name">TravelSolo</div>
+        </div>
+        <div class="nav-bar">
+          <a class="links" href="index.html">Main page</a>
+          <div class="indicate-l"></div>
+          <!-- Here about us and popular -->
+          <a class="links" href="tours.html">All tours</a>
+          <div class="indicate-l"></div>
+          <!-- filter -->
+          <a class="links" href="#">Countries</a>
+          <div class="indicate-active"><div id="progress-bar"></div></div>
+          <!-- about each country -->
+          <a class="links" href="#"></a>
+        </div>
+        <div class="my-acc">
+          <img
+            id="acc-icon"
+            class="profilePhoto"
+            src="../images-video/user.png"
+            alt="acc icon"
+          />
+          <div class="name">
+            <a class="links myAcc" href="useracc.html">My Account</a>
+          </div>
+          <div class="line-logo"></div>
+        </div>
+        <div class="search">
+          <img
+            id="search-icon"
+            alt="search icon"
+            src="../images-video/search.png"
+          />
+        </div>
+      </nav>
+      <div class="backphone">
+        <img src="../images-video/countries.jpg" alt="" />
+        <div class="black">ABOUT COUNTRIES</div>
+      </div>
+    </header>
+    <main>
+      <div class="countries">
+        <div class="country">
+          <div class="name-c">
+            <h2>Turkey</h2>
+          </div>
+          <div class="flag">
+            <img src="../images-video/flag-tk.png" alt="" />
+          </div>
+          <div class="about-c">
+            <p>
+              Turkey is a country that connects Europe with the Middle East.
+              Turkey has played a rather difficult role in history. A large
+              number of wars took place on this land, which was accompanied by a
+              change in the local population. More than two thousand ancient
+              settlements are located on the territory of Turkey. The history of
+              the peoples of Turkey began about 10 thousand years ago. An
+              important role was played by the Greeks, who occupied this land in
+              the XIV-XII centuries BC, their most important contribution was
+              the development of trade and navigation. Later on the land of
+              Turkey there were many colonies, and in the VIII century BC. e.
+              the Phrygians and Libyans came here. Beginning from the VI century
+              BC e., after multiple raids, the Persians began to rule. Today,
+              rest in Turkey takes a leading position among tourist destinations
+              ...
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="country">
+          <div class="name-c">
+            <h2>Egypt</h2>
+          </div>
+          <div class="flag">
+            <img src="../images-video/flag-eg.png" alt="" />
+          </div>
+          <div class="about-c">
+            <p>
+              Egypt is an amazing country shrouded in the secrets of the ancient
+              world. There is hardly a person who, having seen the mysterious
+              pyramids or the beautiful coral gardens of the Red Sea, will not
+              be delighted. Going on a trip to Egypt, you can touch with your
+              own hands the thousand-year-old tombs of the pharaohs who ruled
+              Upper and Lower Egypt, visit the titanic ruins, the temples of
+              Kornak and Luxor, as well as buy ancient and unusual gizmos.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="country">
+          <div class="name-c">
+            <h2>UAE</h2>
+          </div>
+          <div class="flag">
+            <img src="../images-video/flag-uae.png" alt="" />
+          </div>
+          <div class="about-c">
+            <p>
+              The UAE is a deserts with blooming gardens, warm waters of the
+              Persian Gulf, luxury hotels and many goods in stores. The United
+              Arab Emirates is an opportunity to plunge into oriental exoticism,
+              see picturesque landscapes, learn the cultural and national
+              characteristics of an interesting country. In the days of nomadic
+              tribes, the wealth of these places was only in golden sands and
+              azure waters. With the advent of civilization and technological
+              progress, it became clear that at the bottom of the ocean near the
+              UAE there is "black gold" - oil, which is much more valuable than
+              gold dunes. Thanks to the discovery of oil, this country began to
+              develop very quickly and today a lot of tourists are striving to
+              get to the Arab Emirates.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="country">
+          <div class="name-c">
+            <h2>Spain</h2>
+          </div>
+          <div class="flag">
+            <img src="../images-video/flag-sp.png" alt="" />
+          </div>
+          <div class="about-c">
+            <p>
+              Spain is an amazing country that leaves the most vivid impressions
+              for those who have visited it. It can be a trip to the coast or an
+              excursion trip to historical sights, in any case, you will be
+              satisfied. Spain is full of colorful holidays, delicious culinary
+              dishes and the taste of young wine. Any time of the year, if you
+              are bored, go to this country. The Spaniards know how to have fun
+              from the heart and put on unforgettable performances. The best
+              resorts in Spain are replete with good hotels that are ready to
+              offer excellent service and plenty of entertainment.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="country">
+          <div class="name-c">
+            <h2>Thailand</h2>
+          </div>
+          <div class="flag">
+            <img src="../images-video/flag-th.png" alt="" />
+          </div>
+          <div class="about-c">
+            <p>
+              Thailand is a beautiful place with exotic plants and animals! If
+              you have not traveled to this country yet, be sure to pay
+              attention to it. Such wonderful resorts as Pattaya, Phuket, Nang,
+              Kwang and others have been admiring tourists from all over the
+              world for several years. The hottest hangouts and parties in Asia
+              take place here. People come to Thailand to have fun in modern
+              nightclubs, see unusual temples and visit interesting excursions,
+              go shopping, taste original cuisine and learn the culture of the
+              Thai people. Comfortable hotels are always happy to offer tourists
+              excellent service and plenty of entertainment.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="country">
+          <div class="name-c">
+            <h2>Czech</h2>
+          </div>
+          <div class="flag">
+            <img src="../images-video/flag-cz.png" alt="" />
+          </div>
+          <div class="about-c">
+            <p>
+              The Czech Republic is a large country saturated with romance, with
+              amazing architectural monuments and beautiful landscapes. The
+              country has favorable climatic conditions and good ecology. The
+              Czech Republic attracts not only by its clean rivers and lakes,
+              picturesque views of mountains and forests, interesting
+              traditions, but also by historical treasures, the number of which
+              exceeds 1500. These are ancient castles and palaces, austere parks
+              and streets, pubs and taverns with a century-old history. In the
+              Czech Republic, you can not only relax, but also undergo a course
+              of treatment at the thermal springs, as well as go in for skiing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="block-f">
+          <img src="../images-video/logo1.png" alt="logo" />
+          <h2>TravelSolo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute
+          </p>
+        </div>
+        <div class="block-f" id="f2">
+          <div class="name-f">CONTACT US</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+            eiusmod.
+          </p>
+          <div class="p1">
+            <img src="../images-video/icon_home.png" alt="" />
+            <p class="p">Manas 34/1, Almaty, Kazakhstan</p>
+          </div>
+          <div class="p2">
+            <img src="../images-video/icon_phone.png" alt="" />
+            <p class="p">+7(747) 772-64-79</p>
+          </div>
+          <div class="p1">
+            <img src="../images-video/icon_email.png" alt="" />
+            <p class="p">murzabaevnursultan2005@gmail.com</p>
+          </div>
+        </div>
+        <div class="block-f">
+          <div class="name-f" id="g">GALLERY</div>
+          <a href="https://www.pexels.com/ru-ru/">
+            <div class="gallery">
+              <img src="../images-video/gly1.jpg" alt="" />
+              <img src="../images-video/gly2.jpg" alt="" />
+              <img src="../images-video/gly3.jpg" alt="" />
+              <img src="../images-video/antalya.jpg" alt="" />
+              <img src="../images-video/bali.jpg" alt="" />
+              <img src="../images-video/dubai.jpg" alt="" />
+              <img src="../images-video/egypt.jpg" alt="" />
+              <img src="../images-video/georgia.jpg" alt="" />
+              <img src="../images-video/slide (1).jpg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="block-f">
+          <div class="name-f">NEWSLETTER</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+          </p>
+          <form action="index.html" method="post">
+            <input type="email" required placeholder="Enter your email" />
+            <button type="submit">
+              <img src="../images-video/next.png" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="comp">Copyright © 2019 All Rights Reserved by Abdus</div>
+    </footer>
+    <script src="../js/animation.js"></script>
+    <script src="../js/myAcc.js"></script>
+  </body>
+</html>

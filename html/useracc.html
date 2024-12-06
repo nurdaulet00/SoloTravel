@@ -1,0 +1,360 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Turagentstvo</title>
+    <style>
+        nav.sticky {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  padding-top: 15px;
+  margin-top: 0px;
+  font-weight: 600;
+  box-shadow: 0 4px 2px -2px gray;
+}
+nav.sticky .links {
+  color: #000;
+}
+       input[type="button"]{
+            font-family: 'Roboto';
+            color: #070000;
+            font-size: 1.1em;
+            border: 1px solid #a5a5a5;
+            border-radius: 3px;
+            width: 200px;
+            height: 50px;
+            margin: 10px 0px;
+  
+       }
+        .myPhoto {
+          max-width: 300px;
+          max-height: 300px;
+          background-color: rgba(240, 248, 255, 0.664);
+        }
+        table.list {
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 100px;
+  background: #c9a4a4;
+}
+
+td {
+  border-collapse: collapse;
+  text-align: left;
+  padding: 8px 15px;
+
+  background-color: rgb(241, 215, 215);
+}
+
+.thead {
+  height: 2em;
+  padding: 2%;
+  background-color: #ff715b;
+}
+th {
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+      </style>
+  </head>
+
+  <body class="body-index">
+    <header>
+      <nav>
+        <div id="head-logo">
+          <img id="logo" src="../images-video/logo.PNG" alt="the Logo" />
+          <div class="line-logo"></div>
+          <div class="name">TravelSolo</div>
+        </div>
+        <div class="nav-bar">
+          <a class="links" href="index.html">Main page</a>
+          <div class="indicate-active"></div>
+          <!-- Here about us and popular -->
+          <a class="links" href="tours.html">All tours</a>
+          <div class="indicate-l"></div>
+          <!-- filter -->
+          <a class="links" href="countries.html">Countries</a>
+          <div class="indicate-l"></div>
+          <!-- about each country -->
+          <a class="links" href="#"></a>
+        </div>
+        <div class="my-acc">
+          <img id="acc-icon" class="profilePhoto" src="../images-video/user.png" alt="acc icon" />
+          <div class="name">
+            <a class="links myAcc" href="useracc.html">My Account</a>
+          </div>
+          <div class="line-logo"></div>
+        </div>
+        <div class="search">
+          <img
+            id="search-icon"
+            alt="search icon"
+            src="../images-video/search.png"
+          />
+        </div>
+      </nav>
+      <div class="backphone">
+        <img src="../images-video/tours.jpg" alt="" />
+        <div class="black">MY ACCOUNT</div>
+      </div>
+    </header>
+    <main>
+      <div class="partt">
+        <!-- <div class="ava">
+
+          <img src="" alt="" />
+        </div> -->
+
+        <div class="img">
+            <img class="myPhoto profilePhoto" src="" alt="profilePhoto" /><br>
+  
+            <input type="file" name="" id="PhotoUpload" />
+          </div>
+        <div class="important-inf">
+          <!-- <h2>Akbota Zhientaeva</h2>
+          <p>3D designer, IITU</p>
+          <br />
+          <p>
+            Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+            officia deserunt mollit anim id est labor sed ut perspiciatis unde
+            omnis iste natus error sit voluptatem accusantium.
+          </p> -->
+          <ul>
+            <!-- <li>
+              <strong>First Name:</strong>
+              <span>Akbota</span>
+            </li>
+            <br />
+            <li>
+              <strong>Last Name:</strong>
+              <span>Zhientaeva</span>
+            </li> -->
+            <li>
+                <strong>Name:</strong>
+                <span id="userName">Zhientaeva</span>
+            </li>
+            <br />
+            <!-- <li>
+              <strong>Age:</strong>
+              <span>18</span>
+            </li>
+            <br /> -->
+            <li>
+              <strong>Phone:</strong>
+              <span id="userPhone">+7(708) 936-07-04</span>
+            </li>
+            <!-- <br /> -->
+            <!-- <li>
+              <strong>Address:</strong>
+              <span>Almaty, Saina 8, 13</span>
+            </li> -->
+            <br />
+            <li>
+              <strong>Country:</strong>
+              <span>Kazakhstan</span>
+            </li>
+            <br />
+            <li>
+              <strong>Email:</strong>
+              <span id="userEmail">akbotazhientaeva@gmail.com</span>
+            </li>
+            <li>
+                <input
+                type="button"
+                value="Log Out"
+                
+                onclick="document.location.replace('./login.html')"
+              />
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-me">
+        <h2>ABOUT YOU</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. sintoccaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+          omnis iste natus error sit voluptatem
+        </p>
+      </div>
+      <div class="details">
+        <h3>RECENT APPLICATIONS</h3>
+        <div class="little-cards">
+          <a href="/georgia.html" style="text-decoration: none">
+            <div class="little-card">
+              <img src="../images-video/egypt.jpg" alt="" />
+              <div class="w">
+                <h4>EGYPT</h4>
+                <p>12/01/2022-19/01/2022</p>
+              </div>
+            </div>
+          </a>
+          <div class="little-card">
+            <img src="../images-video/bali.jpg" alt="" />
+            <div class="w">
+              <h4>BALI</h4>
+              <p>12/02/2022-19/02/2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="myBookings">
+            <h3>MY BOOKINGS</h3>
+            <div class="table">
+              <table class="list" id="bookingList">
+                <thead>
+                  <tr class="thead">
+                    <th>Country</th>
+                    <th>Data</th>
+                    <th>Time</th>
+                    <th>Adults</th>
+                    <th>Children</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="block-f">
+          <img src="../images-video/logo1.png" alt="logo" />
+          <h2>TravelSolo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute
+          </p>
+        </div>
+        <div class="block-f" id="f2">
+          <div class="name-f">CONTACT US</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+            eiusmod.
+          </p>
+          <div class="p1">
+            <img src="../images-video/icon_home.png" alt="" />
+            <p class="p">Manas 34/1, Almaty, Kazakhstan</p>
+          </div>
+          <div class="p2">
+            <img src="../images-video/icon_phone.png" alt="" />
+            <p class="p">+7(747) 772-64-79</p>
+          </div>
+          <div class="p1">
+            <img src="../images-video/icon_email.png" alt="" />
+            <p class="p">murzabaevnursultan2005@gmail.com</p>
+          </div>
+        </div>
+        <div class="block-f">
+          <div class="name-f" id="g">GALLERY</div>
+          <a href="https://www.pexels.com/ru-ru/">
+            <div class="gallery">
+              <img src="../images-video/gly1.jpg" alt="" />
+              <img src="../images-video/gly2.jpg" alt="" />
+              <img src="../images-video/gly3.jpg" alt="" />
+              <img src="../images-video/antalya.jpg" alt="" />
+              <img src="../images-video/bali.jpg" alt="" />
+              <img src="../images-video/dubai.jpg" alt="" />
+              <img src="../images-video/egypt.jpg" alt="" />
+              <img src="../images-video/georgia.jpg" alt="" />
+              <img src="../images-video/slide (1).jpg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="block-f">
+          <div class="name-f">NEWSLETTER</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+          </p>
+          <form action="index.html" method="post">
+            <input type="email" required placeholder="Enter your email" />
+            <button type="submit">
+              <img src="../images-video/next.png" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="comp">Copyright © 2019 All Rights Reserved by Abdus</div>
+    </footer>
+
+    <script type="text/javascript" src="../js/animation.js"></script>
+    <script src="../js/myAcc.js"></script>
+    <script>
+    
+    document
+  .querySelector('#PhotoUpload')
+  .addEventListener('change', function () {
+    const reader = new FileReader();
+
+    reader.addEventListener('load', () => {
+      users[currentIndex(current.email)].img = reader.result;
+      current.img = reader.result;
+
+      localStorage.setItem('tourists', JSON.stringify(users));
+
+      localStorage.setItem('currentUser', JSON.stringify(current));
+    });
+    reader.readAsDataURL(this.files[0]);
+  });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const currentUsersBookings = [];
+  const allBookings = JSON.parse(localStorage.getItem('bookList'));
+  for (let i = 0; i < allBookings.length; i++) {
+    if (current.name == allBookings[i].userName) {
+      currentUsersBookings.push(allBookings[i]);
+    }
+  }
+  var table = document
+    .getElementById('bookingList')
+    .getElementsByTagName('tbody')[0];
+  for (let j = 0; j < allBookings.length; j++) {
+    var newRow = table.insertRow(table.length);
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    var cell3 = newRow.insertCell(2);
+    var cell4 = newRow.insertCell(3);
+    var cell5 = newRow.insertCell(4);
+    var cell6 = newRow.insertCell(5);
+    cell1.innerHTML = currentUsersBookings[j].country;
+    cell2.innerHTML = currentUsersBookings[j].date;
+    cell3.innerHTML = currentUsersBookings[j].time;
+    cell4.innerHTML = currentUsersBookings[j].adultNumber;
+    cell5.innerHTML = currentUsersBookings[j].childNumber;
+    cell6.innerHTML = currentUsersBookings[j].status;
+  }
+
+  console.log(currentUsersBookings);
+});
+document.addEventListener('DOMContentLoaded', function () {
+  let currentUser = JSON.parse(localStorage.getItem('currentUser'));
+ 
+
+  document.getElementById("userName").innerHTML=currentUser.name;
+  document.getElementById("userEmail").innerHTML=currentUser.email;;
+  document.getElementById("userPhone").innerHTML=currentUser.phone;
+
+});
+
+
+    </script>
+  </body>
+</html>

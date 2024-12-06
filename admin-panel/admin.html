@@ -1,0 +1,120 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Admin-Panel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/aea9308c95.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css-admin/style.css" />
+    <link rel="stylesheet" href="./css-admin/main.css" />
+    <style>
+      a[href='../html/login.html'] {
+        text-decoration: none;
+        font-size: 1.3em;
+      }
+    </style>
+  </head>
+
+  <body onload="insertNewRecord()">
+    <input type="checkbox" id="sidebar-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3 class="brand">
+          <!-- <img src="logo.png" alt="" /> -->
+          <a href="../html/login.html"><span>TravelSolo</span></a>
+        </h3>
+        <label for="sidebar-toggle" class="ti-menu-alt"></label>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li class="active">
+            <a href="admin.html">
+              <i class="fas fa-users"></i>
+              <span>Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="bookings.html">
+              <i class="fas fa-plane"></i>
+              <span>Booking</span>
+            </a>
+          </li>
+          <li>
+            <a href="reviews.html">
+              <i class="fas fa-comments"></i>
+              <span>Reviews</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <div class="search-wrapper">
+          <span class="ti-search"></span>
+          <input type="search" placeholder="Search" />
+        </div>
+      </header>
+
+      <main>
+        <h1>User list</h1>
+        <table class="list table-responsive" id="userList">
+          <thead>
+            <tr class="thead">
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Password</th>
+              <th>Banned</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="editForm" class="forms">
+          <form action="javascript:;">
+            <h1>Edit</h1>
+
+            <input type="text" placeholder="Name" id="name" class="input" />
+            <div id="errorName"></div>
+            <input type="email" placeholder="Email" id="email" class="input" />
+            <div id="errorEmail"></div>
+            <input
+              type="number"
+              placeholder="Phone Number"
+              name=""
+              id="tel"
+              class="input"
+            />
+            <div id="errorTel"></div>
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              class="input"
+            />
+            <div id="errorPassword"></div>
+            <input type="submit" class="button" value="edit" id="edit" />
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="./js/booking.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>
